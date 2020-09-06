@@ -1,9 +1,3 @@
-var EventEmitter = require('events').EventEmitter;
+const monmodule = require('monmodule');
 
-var jeu = new EventEmitter();
-
-jeu.on('gameover', function(message){
-    console.log(message);
-});
-
-jeu.emit('gameover', 'Vous avez perdu !');
+monmodule.direBonjour();
